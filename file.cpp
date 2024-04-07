@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+
 // Функция для вычисления периметра прямоугольника
 int Perimetr(int a, int b) {
     return 2 * (a + b);
