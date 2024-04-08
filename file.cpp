@@ -17,7 +17,6 @@ int Diagonal(float a, float b) {
 }
 
 int main() {
-    setlocale(LC_ALL, "Russian");
     float a, b;
     cout << "Write width: ";
     cin >> a;
