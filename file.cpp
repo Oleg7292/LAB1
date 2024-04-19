@@ -2,17 +2,17 @@
 #include <cmath>
 using namespace std;
 // Функция для вычисления периметра прямоугольника
-int Perimetr(int a, int b) {
+float Perimetr(float a, float b) {
     return 2 * (a + b);
 }
 
 // Функция для вычисления площади прямоугольника
-int Ploshad(float a, float b) {
+float Ploshad(float a, float b) {
     return a * b;
 }
 
 // Функция для вычисления длины диагонали прямоугольника
-int Diagonal(float a, float b) {
+float Diagonal(float a, float b) {
     return sqrt(a * a + b * b);
 }
 
