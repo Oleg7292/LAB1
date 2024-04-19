@@ -24,7 +24,7 @@ float square(float main1, float main2, float height) {
 
 float middle(float main1, float main2) {
 
-	return (0.5 * (main1, main2));
+	return (0.5 * (main1 + main2));
 
 }
 
