@@ -8,7 +8,7 @@ using namespace std;
 
 float perimeter(float main1, float main2, float side1, float side2) {
 
-return (main1 + main2 + side1 + side2);
+	return (main1 + main2 + side1 + side2);
 
 }
 
@@ -16,7 +16,7 @@ return (main1 + main2 + side1 + side2);
 
 float square(float main1, float main2, float height) {
 
-return ((0,5 * (main1 + main2)) * height);
+	return ((0, 5 * (main1 + main2)) * height);
 
 }
 
@@ -24,52 +24,53 @@ return ((0,5 * (main1 + main2)) * height);
 
 float middle(float main1, float main2) {
 
-return (0.5 * (main1, main2));
+	return (0.5 * (main1, main2));
 
 }
 
 int main() {
 
-setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Russian");
 
-float main1, main2, side1, side2, height;
+	float main1, main2, side1, side2, height;
 
-cout << "Длина первого основания: ";
+	cout << "Длина первого основания: ";
 
-cin >> main1;
+	cin >> main1;
 
-cout << "Длина второго основания: ";
+	cout << "Длина второго основания: ";
 
-cin >> main2;
+	cin >> main2;
 
-cout << "Длина боковой стороны: ";
+	cout << "Длина боковой стороны: ";
 
-cin >> side1;
+	cin >> side1;
 
-cout << "Длина боковой стороны: ";
+	cout << "Длина боковой стороны: ";
 
-cin >> side2;
+	cin >> side2;
 
-cout << "Длина высоты: ";
+	cout << "Длина высоты: ";
 
-cin >> height;
+	cin >> height;
 
-if (main1 <= 0 || main2 <= 0 || side1 <= 0 || side2 <= 0 || height <= 0) {
+	if (main1 <= 0 || main2 <= 0 || side1 <= 0 || side2 <= 0 || height <= 0 || side1 < height || side2 < height) {
 
-cout << "Неверные стороны" << endl;
+		cout << "Неверные стороны" << endl;
+		return 0;
 
-}
+	}
 
-else {
+	else {
 
-cout << "Периметр: " << perimeter(main1, main2, side1, side2) << endl;
+		cout << "Периметр: " << perimeter(main1, main2, side1, side2) << endl;
 
-cout << "Площадь: " << square(main1, main2, height) << endl;
+		cout << "Площадь: " << square(main1, main2, height) << endl;
 
-cout << "Длина средней линии: " << middle(main1, main2) << endl;
+		cout << "Длина средней линии: " << middle(main1, main2) << endl;
 
-}
+	}
 
-return 0;
+	return 0;
 
 }
