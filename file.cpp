@@ -11,7 +11,7 @@ float Ploshad(float a, float b) {
     return a * b;
 }
 
-// Функция для вычисления длины диагонали прямоугольника
+// Функция для вычисления длины диагонали прямоугольник
 float Diagonal(float a, float b) {
     return sqrt(a * a + b * b);
 }
