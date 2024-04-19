@@ -31,8 +31,12 @@ int main() {
 	float a, b, c;
 	cout << "Введите 3 числа" << endl;
 	cin >> a >> b >> c;
+	if ((a+b>c)&&(b+c>a)&&(a+c>b)){
 	Perimetr(a, b, c);
 	Ploshad(a, b, c);
-	Proverka(a, b, c);
+	Proverka(a, b, c);}
+	else{
+		cout << "неправильный треугольник";
+	}
 	return 0;
 }
